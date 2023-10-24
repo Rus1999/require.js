@@ -1,3 +1,5 @@
-define(['jquery', 'angular'], function($){
-    $('body').html('Hello, from the other side!');
+define(['jquery', 'methods'], function($, methods){
+    $('#amdBtn').click(function(){
+        methods.showAlert("WOWZAA!!!");
+    })
 })

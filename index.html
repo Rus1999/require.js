@@ -6,11 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <script data-main="scripts/config.js" src="scripts/require.js"></script>
+    <button id="amdBtn">AMD: Asynchronous Modlue Definition</button>
+    <script data-main="scripts/config" src="scripts/require.js"></script>
     <script>
         require(['config'], function(){
             // all of your code here
-            require(['customscript/jqueryFile']);
+            require(['customScript/jqueryFile']);
+            require(['customScript/callCustomAlert']);
         }); 
     </script>
 </body>
